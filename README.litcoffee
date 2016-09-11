@@ -23,13 +23,6 @@ The anticipated (ie, untested) browser compatibility for J+ is as follows:
 | :----: | :-----: | :---------------: | :---: | :----: |
 |    5   |   6.0   |         9         |  12   |  5.1   |
 
-A few specific features have higher requirements, however:
-
-#####  sandbox  #####
-
-J+ packages are served through sandboxed `<iframe>`s; however, note that the `sandbox` attribute is not supported on `<iframe>`s in IE 9, Firefox versions before 17.0, Opera versions before 17, or Safari 5.
-This will not break the code, but could pose a slight security risk.
-
 ###  Document structure:  ###
 
 Each source file is split into two main parts.
@@ -59,7 +52,7 @@ Here is a [link](http://example.com).
 3.  Short list items like these don't end in periods
 
 >   [Issue ##](https://github.com/literallybenjam/j-plus/issues) :
-This is a note regarding a known issue.
+    This is a note regarding a known issue.
 
 -   This is an unordered list with paragraph content.
     For these kinds of lists, there is more padding in the source and each sentence ends with a period.
@@ -86,6 +79,9 @@ This aids in visually matching up lines when several paragraphs of text lie betw
 The following is a subsection titled “Case conventions and variable names”.
 
 ####  Case conventions and variable names  ####
+
+>   **Note :**
+    Not all of the following conventions are employed in this document.
 
 Variables are named as follows:
 
